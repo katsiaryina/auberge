@@ -1,0 +1,86 @@
+@media (max-width: 760px) {
+  #navbar .container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #navbar .logo {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #navbar .container ul {
+    flex-direction: column;
+    padding: 0.2rem;
+  }
+
+  #navbar .container ul li a {
+    padding: 0.5rem;
+    border-bottom: #444 dotted 1px;
+  }
+
+  #history .history-img {
+    display: none;
+  }
+
+  #history .history-info p {
+    margin: 5px 0;
+  }
+
+  footer {
+    flex-direction: column;
+  }
+
+  footer div p {
+    margin: 5px 0;
+  }
+
+  #about .about-img {
+    display: none;
+  }
+
+  #about .about-info {
+    text-align: center;
+    height: ;
+  }
+
+  #testimonials {
+    display: none;
+  }
+
+  #showcase2 .showcase2-content p {
+    margin: 10px 35px;
+  }
+
+  #showcase2 .showcase2-content {
+    text-align: center;
+  }
+
+  #services .container {
+    flex-direction: column;
+  }
+
+  main {
+    flex-direction: column;
+  }
+
+  #reservation {
+    padding: 10px;
+  }
+
+  #address .container {
+    flex-direction: column;
+  }
+
+  #address .container div {
+    margin: 15px 0;
+  }
+
+  #address .container p {
+    margin: 5px 0;
+  }
+
+  #contact .contact-form {
+    display: none;
+  }
+}

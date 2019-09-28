@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <meta
+      name="description"
+      content="Bienvenue chez Vasilki. Le B&B le plus chaleureux à Bromont"
+    />
+    <meta
+      name="keywords"
+      content="B&B, bed and breakfast, bed&breakfast Bromont, 
+    hotel Bromont"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      media="screen and (max-width:768px)"
+      href="./css/mobile.css"
+    />
+    <title>B&B Vasilki | Bromont Bed&Breakfast</title>
+  </head>
+  <body>
+    <header>
+      <nav id="navbar">
+        <div class="container">
+          <div class="logo">
+            <img src="./images/mountain.png" alt="vasilki" />
+            <h1><a href="index.html">Vasilki B&B</a></h1>
+          </div>
+          <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="about.html">À propos de nous</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="photos.html">Photos</a></li>
+            <li><a href="reservation.html">Réservation</a></li>
+            <li><a class="current" href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <div class="contact-form">
+        <h1><span class="maincolor"> Contacter</span> Nous</h1>
+        <p>Pour toute question, n'hésitez pas de nous contacter.</p>
+        <form action="process.php">
+          <div class="form-group">
+            <label for="name">Nom</label>
+            <input type="text" name="name" id="name" />
+          </div>
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" />
+          </div>
+          <div class="form-group">
+            <label for="phone">Numéro de téléphone</label>
+            <input type="text" name="phone" id="phone" />
+          </div>
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea name="message" id="message"></textarea>
+          </div>
+          <button type="submit">Envoyer</button>
+        </form>
+      </div>
+      <div class="map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2806.108393744804!2d-72.65089588414264!3d45.30623597909939!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc9da284596ba29%3A0x83d633ee2ceef319!2s67+Rue+d&#39;Iberville%2C+Bromont%2C+QC+J2L+1L3!5e0!3m2!1sen!2sca!4v1555266354970!5m2!1sen!2sca"
+          width="800"
+          height="600"
+          frameborder="0"
+          style="border:0"
+          allowfullscreen
+        ></iframe>
+      </div>
+    </section>
+
+    <!-- Address Section -->
+    <section id="address">
+      <div class="container">
+        <div>
+          <i class="fas fa-home fa-3x"></i>
+          <p>Adresse</p>
+          <p>67 rue d'Iberville, Bromont, Qc</p>
+        </div>
+        <div>
+          <i class="fas fa-phone fa-3x"></i>
+          <p>Numéro de téléphone</p>
+          <p>438-333-4444</p>
+        </div>
+        <div>
+          <i class="far fa-envelope fa-3x"></i>
+          <p>Email</p>
+          <p>contact@bnbvasilki.com</p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div>
+        <p>67, rue d'Iberville, Bromont</p>
+      </div>
+      <div>
+        <p>Vasilki B&B &copy; 2019, Tous droits reservés</p>
+      </div>
+      <div>
+        <a href="#"> <i class="fab fa-facebook"></i></a>
+        <a href="#"> <i class="fab fa-instagram"></i></a>
+        <a href="#"> <i class="fab fa-twitter"></i></a>
+      </div>
+    </footer>
+  </body>
+</html>

@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Réservation</title>
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      media="screen and (max-width:768px)"
+      href="./css/mobile.css"
+    />
+  </head>
+  <body>
+    <header>
+      <nav id="navbar">
+        <div class="container">
+          <div class="logo">
+            <img src="./images/mountain.png" alt="vasilki" />
+            <h1><a href="index.html">Vasilki B&B</a></h1>
+          </div>
+          <ul>
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="about.html">À propos de nous</a></li>
+            <li><a href="services.html">Services</a></li>
+            <li><a href="photos.html">Photos</a></li>
+            <li><a class="current" href="reservation.html">Réservation</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Prices Section -->
+      <section id="price">
+        <table>
+          <thead>
+            <tr>
+              <th>Nom de la chambre</th>
+              <th>Prix pour la nuit</th>
+              <th>Prix pour la semaine</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Casual</td>
+              <td>30$</td>
+              <td>250$</td>
+            </tr>
+            <tr>
+              <td>Boisé</td>
+              <td>45$</td>
+              <td>280$</td>
+            </tr>
+            <tr>
+              <td>Trio</td>
+              <td>50$</td>
+              <td>320$</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- Reservation form -->
+      <section id="reservation">
+        <h2>Réservez votre place</h2>
+        <div>
+          <label for="room">Chambre</label>
+          <select name="room" id="room">
+            <option value="casual">Casual</option>
+            <option value="boise" selected>Boisé</option>
+            <option value="trio">Trio</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="checkin">Check-in</label>
+          <input type="date" name="checkin" id="checkin" />
+        </div>
+
+        <div>
+          <label for="checkout">Checkout</label>
+          <input type="date" name="checkout" id="checkout" />
+        </div>
+
+        <div>
+          <label for="adults">Adultes</label>
+          <select name="adults" id="adults">
+            <option value="1">1 adulte</option>
+            <option value="2">2 adultes</option>
+            <option value="3">3 adultes</option>
+          </select>
+        </div>
+
+        <div>
+          <label for="kids">Enfants</label>
+          <select name="kids" id="kids">
+            <option value="1">1 enfant</option>
+            <option value="2">2 enfants</option>
+            <option value="3">3 enfants</option>
+          </select>
+        </div>
+        <div>
+          <label for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            required
+            placeholder="Votre adresse courriel"
+          />
+        </div>
+
+        <button type="submit">Réserver</button>
+      </section>
+    </main>
+
+    <footer>
+      <div>
+        <p>67, rue d'Iberville, Bromont</p>
+      </div>
+      <div>
+        <p>Vasilki B&B &copy; 2019, Tous droits reservés</p>
+      </div>
+      <div>
+        <a href="#"> <i class="fab fa-facebook"></i></a>
+        <a href="#"> <i class="fab fa-instagram"></i></a>
+        <a href="#"> <i class="fab fa-twitter"></i></a>
+      </div>
+    </footer>
+    <script src="./main.js"></script>
+  </body>
+</html>

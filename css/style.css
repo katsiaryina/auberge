@@ -1,0 +1,438 @@
+/* Imporing fonts */
+@import url("https://fonts.googleapis.com/css?family=Roboto");
+
+/* Reset */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Main styling */
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.7;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: space-between;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+}
+
+p {
+  margin: 15px 0;
+}
+
+/* Utility Classes */
+
+.container {
+  margin: auto;
+  max-width: 1100px;
+  overflow: hidden;
+}
+
+.maincolor {
+  color: #f7c08a;
+}
+
+/* index.html */
+/* Navbar */
+
+#navbar {
+  background: #333;
+  color: #fff;
+}
+
+#navbar .logo {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#navbar .logo img {
+  width: 80px;
+  padding: 5px;
+}
+
+#navbar .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#navbar .container ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+}
+
+#navbar ul li a {
+  display: block;
+  padding: 20px;
+  text-align: center;
+  font-size: 16px;
+}
+
+#navbar ul li a:hover,
+#navbar ul li a.current {
+  background: #444;
+  color: #f7c08a;
+}
+
+/* Showcase Section */
+
+#showcase {
+  background: url("../images/cabin-snow.jpg") no-repeat bottom center/cover;
+  height: 100vh;
+  color: #fff;
+}
+
+#showcase .showcase-content {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+#showcase .showcase-content h1 {
+  font-size: 45px;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+#showcase .showcase-content p {
+  font-size: 20px;
+}
+
+.btn {
+  display: inline-block;
+  font-size: 18px;
+  color: #fff;
+  background: #333;
+  padding: 13px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background: #f7c08a;
+  color: #333;
+}
+
+/* History Section */
+
+#history {
+  height: 500px;
+  display: flex;
+}
+
+#history div {
+  flex: 1;
+}
+
+#history .history-img {
+  background: url("../images/chopped-wood\ .jpg") no-repeat center center/cover;
+}
+
+#history .history-info h1 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+#history .history-info {
+  background: #444;
+  color: #fff;
+  padding: 40px;
+  text-align: justify;
+}
+
+/* Footer */
+footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+footer a {
+  margin-right: 10px;
+}
+
+/* about.html */
+
+#about {
+  display: flex;
+  padding: 50px;
+}
+
+#about .about-img img {
+  width: 70%;
+  border-radius: 50%;
+  display: block;
+  margin: auto;
+}
+
+#about div {
+  flex: 1;
+}
+
+#testimonials {
+  background: url("../images/view.jpg") no-repeat center center/cover;
+  min-height: 800px;
+  padding: 70px;
+  display: flex;
+  align-items: center;
+}
+
+#testimonials .container div {
+  padding: 15px;
+}
+
+#testimonials .white-overlay h1 {
+  text-align: center;
+}
+
+.bold {
+  font-weight: 600;
+}
+
+#testimonials .white-overlay {
+  background: rgba(255, 255, 255, 0.2);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  height: 100%;
+  padding: 70px;
+}
+
+#testimonials .container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+#testimonials .container div {
+  background: #f7c08a;
+  border-radius: 4px;
+  opacity: 0.9;
+  flex: 1;
+  margin: 20px;
+}
+
+#testimonials .container h1 {
+  text-align: center;
+}
+
+/* services.html */
+
+#showcase2 {
+  background: url("../images/bythefire.jpg") no-repeat center center/cover;
+  color: #fff;
+  height: 80vh;
+}
+
+#showcase2 .showcase2-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100%;
+  align-items: center;
+}
+
+#services h1 {
+  text-align: center;
+}
+
+#services .container {
+  display: flex;
+  margin: auto;
+}
+
+#services h1 {
+  margin-top: 30px;
+}
+
+#services .container div {
+  flex: 1;
+  text-align: center;
+  padding: 30px;
+  margin: 10px;
+}
+
+#services .container div i {
+  background: #f7c08a;
+  padding: 1rem 1.5rem;
+  border-radius: 50%;
+  margin-bottom: 16px;
+}
+
+/* contact.html */
+
+#contact {
+  display: flex;
+}
+
+#contact .contact-form {
+  flex: 1;
+  padding: 40px;
+}
+
+#contact .map {
+  background: url("../images/chopped-wood\ .jpg") no-repeat center center/conver;
+  flex: 2;
+}
+
+#contact .contact-form .form-group {
+  margin: 12px;
+}
+
+#contact .contact-form input,
+#contact .contact-form textarea {
+  display: block;
+  padding: 10px;
+  width: 100%;
+}
+
+#contact .contact-form input:focus,
+#contact .contact-form textarea:focus {
+  outline: none;
+  border-color: #f7c08a;
+}
+
+#contact .contact-form button {
+  background: #333;
+  color: #fff;
+  width: 100%;
+  padding: 10px;
+  margin-top: 15px;
+  border: none;
+  border-radius: 5px;
+}
+
+#contact .contact-form button:hover {
+  background: #f7c08a;
+}
+
+#address {
+  background: #444;
+  color: white;
+  padding: 40px 0;
+}
+
+#address .container {
+  display: flex;
+  justify-content: center;
+}
+
+#address .container div {
+  flex: 1;
+  text-align: center;
+}
+
+.wrapper {
+  max-width: 760px;
+  margin: auto;
+  border: #fff solid 3px;
+  background: #fff;
+}
+
+.main-img img,
+.imgs img {
+  width: 100%;
+}
+
+.imgs {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.imgs img {
+  flex: 1;
+  max-width: 170px;
+  margin: 5px;
+}
+
+/* reservation.html */
+
+main {
+  display: flex;
+  justify-content: space-around;
+  background: url("../images/rooms/img3.jpg") no-repeat center center/cover;
+  padding: 45px;
+}
+
+#reservation,
+#price {
+  margin: 15px;
+}
+
+#price table {
+  border: 1px solid #c7c7c7;
+  margin: 16px;
+  border-collapse: collapse;
+  background: rgba(255, 255, 255, 0.2);
+  /* opacity: 0.6; */
+}
+
+#price table td,
+#price table th {
+  border: 1px dotted #c7c7c7;
+  padding: 15px;
+}
+
+#price table th {
+  background: #e3e3e3;
+  font-weight: 200;
+}
+
+#reservation {
+  padding: 60px;
+  /* background: #fff; */
+  background: rgba(255, 255, 255, 0.5);
+}
+
+#reservation div,
+#reservation h2 {
+  margin-bottom: 20px;
+}
+
+#reservation input,
+#reservation select {
+  /* margin-left: 20px; */
+  padding: 8px;
+  width: 100%;
+  border-radius: 3px;
+  border: 1px solid lightgrey;
+}
+
+#reservation button {
+  display: inline-block;
+  width: 100%;
+  padding: 15px 0;
+  border-radius: 3px;
+  border: none;
+  background: #f7c08a;
+  transition: all 0.5s;
+}
+
+#reservation button:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+#reservation input:focus,
+#reservation select:focus {
+  outline: none;
+  border-color: #f7c08a;
+}
